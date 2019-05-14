@@ -20,7 +20,14 @@ function nowServing(katzDeliLine) {
       return ("The line is currently empty.");}
     var emptyarray=[];
     for (var i=0; i< folksinline.length; i++)
-     emptyarray.push( `${ i+1}` + ". " + folksinline[i]);
+     emptyarray.push(`${i+1}. ${folksinline[i]}`);
 
-    return "The line is currently: " + emptyarray;
-}
+    return "The line is currently: " + ${emptyarray.join(", ")};
+//At the start of the day,the deli is empty and is an empty [] container
+    function takeANumber(deliarray){
+
+      for (var i=1; i< deliarray.length;i++){
+        deliarray.push(deliarray);
+      return ("Welcome, You are number" + `${deliarray.length[i]`);}
+    }
+    //
